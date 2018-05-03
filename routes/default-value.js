@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET default join-form-question. */
 router.get('/join-form-question', function(req, res, next) {
   let joinFromQuestions = [
     {
@@ -4569,6 +4569,7 @@ router.get('/join-form-question', function(req, res, next) {
   res.json(joinFromQuestions);
 });
 
+/* GET default emails. */
 router.get('/emails', function(req, res, next) {
   let emails = [
     {

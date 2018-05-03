@@ -38,7 +38,7 @@ router.get('/configuration/:name', function(req, res, next) {
     })
 });
 
-/* Upload tn. */
+/* update tn. */
 router.put('/configuration/:name', function(req, res, next) {
   let system = req.params.id;
   matrixTankApi.getBySystemId(system)
